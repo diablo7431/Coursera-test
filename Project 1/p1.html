@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="11" content="width=device-width ,initial-scale 1">
-<style type="text/css">
-  body{
-  text-align: left;
-  margin: 0;
-  font-family: Arial, Helvetica;
+  <title>video webpage</title>
+  <meta name="viewport" 
+  content="width=device-width, initial-scale=1">\
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 19px;
 
+    }
+    #myvideo{
+      position: fixed;
+      height: 1440px;
+      width: 2560px;
 
-}
-.l1{
-  color:#1a0000
-  height: 500;
-  text-shadow: all; 
-  text-align: center;
-}
-.heading{
-  size: small;
-  text-decoration-style: solid;
-  text-align: center;
-    color: ;
+    }
+    .content{
+      position: fixed;
+      bottom: 0;
+      background: rgba(16, 149, 176, 0.5);
 
-}
-.hero-image {
-  background-image: url("11.png");
-  background-color: #cccccc;
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-.click{
-  background-color: #4d0026;
-  color: white;
-  
-}
-</style>
-	<title>My Life</title>
+    }
+    #mybtn{
+      width: 200px;
+      font-size: 19pz;
+      padding: 10px;
+      border: none;
+      color: #1095b0;
+      cursor: pointer;
+    }
+    #mybtn:hover{
+      background: white;
+      color: black;
+    }
+  </style>
 </head>
-<body>	
-	<div class="hero-image">
-		<div class="hero-text">
-			<h2>Hello</h2>
-			
-			<p id="demo" class="l1">
-    Hello This is my first Webpage, so if its looks dull please dont Mind
-  </p>
+<body>
+<video autoplay muted loop id="myvideo">
+  <source src="new.mp4" type="video/mp4"> your browser does not support html5 video
+</video>
+<div class="content">
+  <h1>Heading</h1>
+  <p>  I wanted to buy #OnePlus 8 pro but I stopped as it's made in China.<br>
 
-<button class="click" type="button" onclick='document.getElementById("demo").innerHTML = "Shit just Worked!!!!"'>Click Me!</button>
+So I changed my opinion and searched for #iphone11 sadly 80% of iPhones are made in #China<br>
 
+I decided to open #flipkart to search for other mobiles but Flipkart is funded by #Chinese_venture_capital. I was extremely disappointed and thought of eating some delicious food opened #Zomato #Swiggy irony is that both are funded by chinese firms.<br>
 
-		</div>
-		
-	</div>
-	
-	 
+I decided to order some snacks from #Big_Basket, is also funded by china. I was vexed went to restaurant. But to go there, I booked #ola and cancelled because China funded ola too.
+<br>
+I wanted to compromise for food but Ola (ANI Technologies Pvt. Ltd) driver was accepting ride only if pay through Paytm is also China funded.<br>
+I was fed up and wanted to open my laptop to learn something.That's #Lenovo, but made in China apologies again. I survived with the screening and opened #BYJU'S to learn oops! again is funded by China.<br>
 
+After seeing all this I got severe headache and thought of popping a pill (paracetamol) omg! China is there too.<br>
+
+Finally I died of severe headache. My friends posted RIP from their #Chinamobiles.<br>
+</p>
+<button id="mybtn" onclick="myfunction()">Pause</button>
+
+</div>
+<script>
+  var video = document.getElementById("myvideo");
+  var btn = document.getElementById("mybtn");
+  function myfunction() {
+   if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+
+   }else
+   video.pause();
+   btn.innerHTML ="Play" // body...
+  }
+</script>
 </body>
 </html>
