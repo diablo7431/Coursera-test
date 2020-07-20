@@ -111,10 +111,10 @@ a {
  
 .thumb {
     max-height: 168px;
-    border: solid 6px 6px 10px white;
+    border: solid 6px 6px 1px grey;
     z-index: 1;
     position: center;
-    transform: translate(200%, -50%);
+    transform: translate(-50%, -50%);
     top: 60%;
     left: 50%;
 
@@ -125,7 +125,7 @@ a {
     height: 0;
     width: 0;
     text-align: center;
-    top: 0;
+    top: 10%;
     left: 50px;
     background: rgba(0, 1, 0, 1);
     opacity: 0;
