@@ -111,10 +111,10 @@ a {
  
 .thumb {
     max-height: 168px;
-    border: solid 6px 6px 10px grey;
+    border: solid 6px 6px 10px white;
     z-index: 1;
     position: center;
-    transform: translate(-50%, -50%);
+    transform: translate(200%, -50%);
     top: 60%;
     left: 50%;
 
@@ -133,10 +133,10 @@ a {
 }
 .lightbox img {
     max-width: 100%;
-    max-height: 80%;
+    max-height: 100%;
     margin: auto;
     opacity: 0;
-
+    overflow: hidden;
 }
 .lightbox:target {
     outline: none;
@@ -149,7 +149,7 @@ a {
     
 }
 .lightbox:target img {
-    border: solid 5px white;
+    border: solid 17px white;
     opacity: 0.8;
    
     transition: opacity 0.3s;
@@ -178,8 +178,8 @@ a {
 }
 .btn-close {
     position: absolute;
-    right: 1%;
-    top: 1%;
+    right: 2%;
+    top: 2%;
     color: #fafafa;
     background-color: red;
     border: solid 5px white;
