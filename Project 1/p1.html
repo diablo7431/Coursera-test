@@ -3,50 +3,67 @@
 <head>
   <title>video webpage</title>
   <meta name="viewport" 
-  content="width=device-width, initial-scale=1">\
+  content="width=device-width, initial-scale=1">
   <style>
     * {
-      box-sizing: border-box;
+    
     }
     body {
+      position: relative;
       margin: 0;
-      font-family: Arial;
-      font-size: 19px;
+      font-family: Broadway;
+      font-size: 25px;
+      font-weight: 10px;
+
 
     }
     #myvideo{
-      position: fixed;
-      height: 1440px;
-      width: 2560px;
+      position: center;
+      text-align: center;
+      width: 100%;
+      size: cover;
+
 
     }
     .content{
-      position: fixed;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
       bottom: 0;
-      background: rgba(16, 149, 176, 0.5);
+      background-position: center center;
+      background-size: cover;     
+      background: rgba(214, 212, 212, 0);
+      color: rgb(0, 0, 0); 
 
     }
     #mybtn{
       width: 200px;
-      font-size: 19pz;
+      font-size: 30px;
       padding: 10px;
       border: none;
       color: #1095b0;
       cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.9);
     }
     #mybtn:hover{
-      background: white;
-      color: black;
+      background: black;
+      color: white;
+    }
+    .para{
+      font-weight: bold;
+      font-size: 10px;
     }
   </style>
 </head>
 <body>
 <video autoplay muted loop id="myvideo">
-  <source src="new.mp4" type="video/mp4"> your browser does not support html5 video
+  <source src="kk1.mp4" type="video/mp4"> your browser does not support html5 video
 </video>
 <div class="content">
-  <h1>Heading</h1>
-  <p>  I wanted to buy #OnePlus 8 pro but I stopped as it's made in China.<br>
+  <h1>FACTS</h1>
+  <p id="para">  I wanted to buy #OnePlus 8 pro but I stopped as it's made in China.<br>
 
 So I changed my opinion and searched for #iphone11 sadly 80% of iPhones are made in #China<br>
 
@@ -70,12 +87,13 @@ Finally I died of severe headache. My friends posted RIP from their #Chinamobile
   function myfunction() {
    if (video.paused) {
     video.play();
-    btn.innerHTML = "Pause";
+    btn.innerHTML = "Next";
 
    }else
    video.pause();
-   btn.innerHTML ="Play" // body...
+   btn.innerHTML = "Same" 
   }
 </script>
+<FOOTER>LJKK</FOOTER>
 </body>
 </html>
