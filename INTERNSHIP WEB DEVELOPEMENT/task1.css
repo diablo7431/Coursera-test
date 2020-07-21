@@ -112,9 +112,9 @@ a {
 .thumb {
     max-height: 168px;
     border: solid 6px 6px 10px white;
-    z-index: 1;
+    z-index: 999;
     position: center;
-    transform: translate(200%, -50%);
+    transform: translate(150%, -50%);
     top: 60%;
     left: 50%;
 
@@ -443,10 +443,10 @@ input[name="r"]{
 	font-size: 20px;
 	text-align: left;
 	text-decoration: none;
-	color: white;
+	color: #212529;
 	white-space: 1px;
-	background-color: black;
-	opacity: 0.6;
+	background-color: #a8dadc;
+	opacity: 1;
 
 	
 }
